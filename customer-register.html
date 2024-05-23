@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cloudx | Registro de cliente</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Início</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./news.html" class="navbar-link">Notícias</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./supplier-register.html" class="navbar-link"
+              >Fornecedor</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="./customer-register.html" class="navbar-link">Cliente</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./sales-register.html" class="navbar-link">Vendas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./products-register.html" class="navbar-link">Produtos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about-us.html" class="navbar-link">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="container" class="container row">
+        <form action="./index.html" class="form customer">
+          <h2 class="title customer">Cadastro de clientes</h2>
+          <div class="input-container">
+            <label for="name">Nome Completo</label>
+            <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+            <input placeholder="Fulano de tal" name="name" type="text" />
+          </div>
+          <div class="input-container">
+            <label for="cpf">CPF</label>
+            <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+            <input placeholder="123.123.123-12" name="cpf" type="text" />
+          </div>
+          <div class="input-container">
+            <label for="birthdate">Data de nascimento</label>
+            <input name="birthdate" type="date" />
+          </div>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="street">Endereço</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="Avenida Fulano de Tal"
+                name="street"
+                type="text"
+              />
+            </div>
+            <div class="input-container">
+              <label for="region">Bairro</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="Bairro tal" name="region" type="text" />
+            </div>
+          </div>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="number">Número</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="2134" name="number" type="number" />
+            </div>
+            <div class="input-container">
+              <label for="complement">Complemento</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="AP 123" name="complement" type="text" />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="email">E-mail</label>
+            <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+            <input placeholder="email@example.com" name="email" type="email" />
+          </div>
+          <div class="input-container">
+            <label for="phone">Telefone</label>
+            <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+            <input
+              placeholder="+55 34 9 1234-5678"
+              name="phone"
+              type="number"
+            />
+          </div>
+
+          <button class="button" type="submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

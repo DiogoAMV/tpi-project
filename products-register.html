@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cloudx | Registro de produtos</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Início</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./news.html" class="navbar-link">Notícias</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./supplier-register.html" class="navbar-link"
+              >Fornecedor</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="./customer-register.html" class="navbar-link">Cliente</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./sales-register.html" class="navbar-link">Vendas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./products-register.html" class="navbar-link">Produtos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about-us.html" class="navbar-link">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="container" class="container row">
+        <form action="./index.html" class="form customer">
+          <h2 class="title customer">Cadastrar novo produto</h2>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="street">Nome do produto</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="Digite o nome do produto"
+                name="product"
+                type="text"
+              />
+            </div>
+            <div class="input-container">
+              <label for="id_product">Categoria do produto</label>
+              <select name="category">
+                <option value="">-- Selecione uma categoria --</option>
+                <option value="service">Serviço</option>
+                <option value="hosting">Hospedagem</option>
+                <option value="development">Desenvolvimento</option>
+                <option value="consultancy">Consultoria</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="price">Preço</label>
+            <input placeholder="R$100,00" name="price" type="number" />
+          </div>
+          <button class="button" type="submit">Criar produto</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

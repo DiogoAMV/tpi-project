@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cloudx | Notícias</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Início</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./news.html" class="navbar-link">Notícias</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./supplier-register.html" class="navbar-link"
+              >Fornecedor</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="./customer-register.html" class="navbar-link">Cliente</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./sales-register.html" class="navbar-link">Vendas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./products-register.html" class="navbar-link">Produtos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about-us.html" class="navbar-link">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="container" class="container row newsletter">
+        <aside class="aside">
+          <!-- Oh fessor se tu estiver lendo isso, ignora esse form pq ele não tá dentro dos 4 formulários obrigatórios não, fizemos ele só pra encher linguiça aqui no site -->
+          <!-- Ação do form: depois de clicar no botão com type "submit" (que serve justamente para forms e tem o mesmo efeito de um <input type="submit" />) ele vai imprimir um alerta usando a função alert do JavaScript, dps vai enviar o usuário pra página principal (só depois que ele clicar em OK no alerta) -->
+          <form
+            class="form newsletter"
+            action="./index.html"
+            onsubmit="alert('Inscrição feita com sucesso! Agradecemos pelo seu interesse em nossos conteúdos.');"
+          >
+            <h2 class="title newsletter">Deseja receber mais notícias?</h2>
+            <p class="description newsletter">
+              Então se inscreva agora e receba todas as atualizações por e-mail!
+            </p>
+            <div class="input-container">
+              <label for="email">E-mail</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="email@example.com"
+                name="email"
+                type="email"
+              />
+            </div>
+            <button class="button" type="submit">Matricular-se</button>
+          </form>
+        </aside>
+        <ul class="post-list">
+          <li class="post-li">
+            <article class="post-item">
+              <h1 class="title post">Título do post</h1>
+              <!-- tag para especificar uma data -->
+              <time datetime="2024-05-23">23 de maio de 2024</time>
+              <p class="description post">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente accusamus obcaecati facilis recusandae id pariatur
+                porro maiores! Dolorem eligendi excepturi odio provident nemo,
+                unde illo dolores adipisci ullam libero sed....
+              </p>
+              <a class="details post" href="">Continuar lendo</a>
+              <div class="divider"></div>
+            </article>
+            <article class="post-item">
+              <h1 class="title post">Título do post</h1>
+              <!-- tag para especificar uma data -->
+              <time datetime="2024-05-23">23 de maio de 2024</time>
+              <p class="description post">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente accusamus obcaecati facilis recusandae id pariatur
+                porro maiores! Dolorem eligendi excepturi odio provident nemo,
+                unde illo dolores adipisci ullam libero sed....
+              </p>
+              <a class="details post" href="">Continuar lendo</a>
+              <div class="divider"></div>
+            </article>
+            <article class="post-item">
+              <h1 class="title post">Título do post</h1>
+              <!-- tag para especificar uma data -->
+              <time datetime="2024-05-23">23 de maio de 2024</time>
+              <p class="description post">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente accusamus obcaecati facilis recusandae id pariatur
+                porro maiores! Dolorem eligendi excepturi odio provident nemo,
+                unde illo dolores adipisci ullam libero sed....
+              </p>
+              <a class="details post" href="">Continuar lendo</a>
+              <div class="divider"></div>
+            </article>
+            <article class="post-item">
+              <h1 class="title post">Título do post</h1>
+              <!-- tag para especificar uma data -->
+              <time datetime="2024-05-23">23 de maio de 2024</time>
+              <p class="description post">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente accusamus obcaecati facilis recusandae id pariatur
+                porro maiores! Dolorem eligendi excepturi odio provident nemo,
+                unde illo dolores adipisci ullam libero sed....
+              </p>
+              <a class="details post" href="">Continuar lendo</a>
+              <div class="divider"></div>
+            </article>
+            <article class="post-item">
+              <h1 class="title post">Título do post</h1>
+              <!-- tag para especificar uma data -->
+              <time datetime="2024-05-23">23 de maio de 2024</time>
+              <p class="description post">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente accusamus obcaecati facilis recusandae id pariatur
+                porro maiores! Dolorem eligendi excepturi odio provident nemo,
+                unde illo dolores adipisci ullam libero sed....
+              </p>
+              <a class="details post" href="">Continuar lendo</a>
+              <div class="divider"></div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

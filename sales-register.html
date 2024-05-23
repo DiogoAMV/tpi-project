@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>cloudx | Registro de cliente</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Início</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./news.html" class="navbar-link">Notícias</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./supplier-register.html" class="navbar-link"
+              >Fornecedor</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="./customer-register.html" class="navbar-link">Cliente</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./sales-register.html" class="navbar-link">Vendas</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./products-register.html" class="navbar-link">Produtos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./about-us.html" class="navbar-link">Sobre nós</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="container" class="container row">
+        <form action="./index.html" class="form customer">
+          <h2 class="title customer">Cadastrar nova venda</h2>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="product">Nome do produto</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="Digite o nome do produto"
+                name="product"
+                type="text"
+              />
+            </div>
+            <div class="input-container">
+              <label for="id_product">ID do produto</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="12345678" name="id_product" type="number" />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="sale_date">Data da venda</label>
+            <input name="sale_date" type="date" />
+          </div>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="id_client">ID do cliente</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="123456789100"
+                name="id_client"
+                type="number"
+              />
+            </div>
+            <div class="input-container">
+              <label for="value">Valor da venda</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="R$100,00" name="value" type="number" />
+            </div>
+          </div>
+          <div class="checkbox-input">
+            <input name="complement_package" type="checkbox" />
+            <label for="complement_package">
+              O pacote complementar está incluso na venda?</label
+            >
+          </div>
+          <button class="button" type="submit">Registrar venda</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

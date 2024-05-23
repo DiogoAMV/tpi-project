@@ -1,0 +1,350 @@
+/* O seletor * seleciona todos os elementos do documento HTML */
+* {
+  box-sizing: border-box; /* O seletor box-sizing: border-box faz com que a largura e a altura de um elemento incluam o preenchimento e a borda, não apenas o conteúdo. */
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* define a largura máxima do elemento */
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #252b42;
+}
+
+span,
+p,
+strong,
+a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 16px;
+}
+
+/* desativa todo o tipo de estilização em listas (exemplo: lista com bolinhas, números, letras em ordem alfabética...) */
+ul {
+  list-style: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding: 12px 6px;
+}
+
+select {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  padding: 10px 6px;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  background-color: #6969d6;
+  color: #fff;
+  margin: 8px 0;
+  width: 100%;
+  /* o cursor pointer defineo cursor de maozinha pro elemento quando passar o cursor sobre ele */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5050a2;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 24px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar .navbar-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.navbar-link:hover {
+  color: #6969d6;
+}
+
+#container {
+  width: 100%;
+  padding: 0 80px;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#container.row.newsletter {
+  align-items: self-start;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  /* dá um espaçamento entre cada elemento dentro dele */
+  gap: 32px;
+  margin-top: 120px;
+  max-width: 70%;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: bold;
+  /* faz o alinhamento do texto caso haja quebra de linhas */
+  text-align: left;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  color: #737373;
+}
+
+.image-example {
+  margin: 24px 0;
+  max-width: 40%;
+  height: 60%;
+  border-radius: 8px;
+  /* o object-fit: cover faz com que a imagem ao invés de se expremer, ela se estique mantendo sua largura caso algum elemento diminua o tamanho dela */
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-example-second {
+  float: left;
+  margin: 24px 0;
+  max-width: 80%;
+  height: 80%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.elements-container {
+  display: flex;
+  gap: 24px;
+}
+
+.elements-image {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.aside {
+  max-width: 20%;
+  padding: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+}
+
+.title.newsletter {
+  font-size: 20px;
+}
+
+.description.newsletter {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 50%;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title.post {
+  font-size: 24px;
+}
+
+.details.post {
+  color: #6969d6;
+}
+.details.post:hover {
+  /* adiciona um sublinhado no elemento quando passa o cursor por cima dele */
+  text-decoration: underline;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #cdcdcd;
+  margin: 24px 0;
+}
+
+.form.supplier {
+  max-width: 40%;
+}
+
+.elements.text {
+  max-width: 40%;
+}
+
+.title.supplier {
+  font-size: 24px;
+  color: #fff;
+}
+
+.description.supplier {
+  font-weight: 400;
+  color: #c2c2c2;
+}
+
+.input-container.row {
+  width: 100%;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.checkbox-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+#container.about {
+  align-items: flex-start;
+}
+
+.subtitle.about {
+  margin-top: 24px;
+  width: 30%;
+}
+
+.head.about {
+  color: #6969d6;
+}
+
+.content-container.about {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.image-container.about {
+  display: flex;
+  width: 100%;
+}
+
+.description-container.about {
+  max-width: 70%;
+  margin-left: 110px;
+}
+
+.text-container.about {
+  display: flex;
+  margin: 0;
+}
+
+.first-about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.image-example.first.about {
+  max-width: 100%;
+  height: 100%;
+}
+
+.image-example.about {
+  max-width: 40%;
+}
+
+.images-container.about.row {
+  max-width: fit-content;
+  margin-right: 140px;
+  justify-content: flex-end;
+  display: flex;
+  gap: 40px;
+}
+
+.another-image {
+  display: flex;
+  z-index: -1;
+}
+
+.img-another {
+  position: absolute;
+  margin: 80px 0 0 180px;
+  top: 0;
+  left: 0;
+  max-width: 35%;
+  border-radius: 12px;
+}
