@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>cloudx | Registro de Fornecedores</title>
   </head>
   <body>
@@ -54,41 +55,67 @@
             srcset=""
           />
         </div>
-        <form action="./index.html" class="form supplier">
+        <form
+          name="supplierForm"
+          method="post"
+          id="supplierForm"
+          class="form supplier"
+        >
           <h2 class="title supplier">
             Formulário para inscrição de fornecedor
           </h2>
           <div class="input-container">
             <label for="name">Nome Completo</label>
             <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
-            <input placeholder="Fulano de tal" name="name" type="text" />
+            <input
+              value="Fulano Teste"
+              required
+              placeholder="Fulano de tal"
+              name="name"
+              type="text"
+            />
           </div>
           <div class="input-container">
             <label for="birthdate">Data de nascimento</label>
-            <input name="birthdate" type="date" />
+            <input value="2024-06-16" name="birthdate" type="date" />
           </div>
           <div class="input-container">
             <label for="email">E-mail</label>
             <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
-            <input placeholder="email@example.com" name="email" type="email" />
+            <input
+              value="fulano@gmail.com"
+              required
+              placeholder="email@example.com"
+              name="email"
+              type="email"
+            />
           </div>
           <div class="input-container">
             <label for="phone">Telefone</label>
             <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
             <input
+              value="999123123"
+              required
               placeholder="+55 34 9 1234-5678"
               name="phone"
-              type="number"
+              type="text"
             />
           </div>
           <div class="input-container">
-            <label for="cpf">CPF</label>
+            <label for="cpf">CPF/CNPJ</label>
             <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
-            <input placeholder="123.123.123-12" name="cpf" type="text" />
+            <input
+              value="123.456.999-48"
+              required
+              placeholder="123.123.123-12"
+              name="cpf"
+              type="text"
+            />
           </div>
           <button class="button" type="submit">Enviar</button>
         </form>
       </section>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
