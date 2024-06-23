@@ -74,6 +74,10 @@ button {
   cursor: pointer;
 }
 
+button.different {
+  background-color: #252b42;
+}
+
 button:hover {
   background-color: #5050a2;
 }
@@ -347,4 +351,42 @@ button:hover {
   left: 0;
   max-width: 35%;
   border-radius: 12px;
+}
+
+.table {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 48px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.table > h2 {
+  margin-bottom: 16px;
+}
+
+thead {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #cdcdcd;
+}
+
+th,
+td,
+tbody {
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+td {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
 }

@@ -38,11 +38,11 @@
     </header>
     <main>
       <section id="container" class="container row">
-        <form action="./index.html" class="form customer">
+        <form id="productsForm" class="form customer">
           <h2 class="title customer">Cadastrar novo produto</h2>
           <div class="input-container row">
             <div class="input-container">
-              <label for="street">Nome do produto</label>
+              <label for="product">Nome do produto</label>
               <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
               <input
                 placeholder="Digite o nome do produto"
@@ -51,7 +51,7 @@
               />
             </div>
             <div class="input-container">
-              <label for="id_product">Categoria do produto</label>
+              <label for="category">Categoria do produto</label>
               <!-- O Select é um input diferente, é um input para selecionar alguma opcão dentre várias destacadas, as opções são declaradas dentro da tag <option />' -->
               <select name="category">
                 <option value="">-- Selecione uma categoria --</option>
@@ -63,12 +63,32 @@
             </div>
           </div>
           <div class="input-container">
-            <label for="price">Preço</label>
-            <input placeholder="R$100,00" name="price" type="number" />
+            <div class="input-container">
+              <label for="description">Descrição</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input
+                placeholder="Descrição do produto"
+                name="description"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="input-container row">
+            <div class="input-container">
+              <label for="price">Preço</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="R$100,00" name="price" type="text" />
+            </div>
+            <div class="input-container">
+              <label for="quantity">Quantidade disponível</label>
+              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
+              <input placeholder="50" name="quantity" type="number" />
+            </div>
           </div>
           <button class="button" type="submit">Criar produto</button>
         </form>
       </section>
     </main>
+    <script src="./products.js"></script>
   </body>
 </html>

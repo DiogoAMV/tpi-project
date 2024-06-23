@@ -11,7 +11,8 @@ document
     // validação de campos (verificar se tem campos não preenchidos)
     for (const key in formData) {
       if (!formData[key]) {
-        alert(`O campo ${key} é obrigatório`);
+        const label = document.querySelector(`label[for="${key}"]`).textContent;
+        alert(`O campo "${label}" é obrigatório`);
         return;
       }
     }

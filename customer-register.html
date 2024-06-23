@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>cloudx | Registro de cliente</title>
   </head>
   <body>
@@ -38,7 +39,7 @@
     </header>
     <main>
       <section id="container" class="container row">
-        <form action="./index.html" class="form customer">
+        <form id="customerForm" class="form customer">
           <h2 class="title customer">Cadastro de clientes</h2>
           <div class="input-container">
             <label for="name">Nome Completo</label>
@@ -56,6 +57,31 @@
           </div>
           <div class="input-container row">
             <div class="input-container">
+              <label for="id_product">Estado</label>
+              <!-- O Select é um input diferente, é um input para selecionar alguma opcão dentre várias destacadas, as opções são declaradas dentro da tag <option />' -->
+              <select id="Estado" name="uf" onchange="PreencherCidade()">
+                <option value="">-- Selecione uma Estado --</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Sao Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Brasilia">Brasília</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="id_product">Cidade</label>
+              <!-- O Select é um input diferente, é um input para selecionar alguma opcão dentre várias destacadas, as opções são declaradas dentro da tag <option />' -->
+              <select id="Cidade" name="city">
+                <option value="">-- Selecione uma cidade --</option>
+
+                <option value="uberlandia">Uberlândia</option>
+                <option value="Sao Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Ceilandia">Ceilândia</option>
+                <option value="Florianopolis">Florianópolis</option>
+              </select>
+            </div>
+            <div class="input-container">
               <label for="street">Endereço</label>
               <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
               <input
@@ -70,6 +96,7 @@
               <input placeholder="Bairro tal" name="region" type="text" />
             </div>
           </div>
+          <div class="input-container row"></div>
           <div class="input-container row">
             <div class="input-container">
               <label for="number">Número</label>
@@ -101,6 +128,6 @@
         </form>
       </section>
     </main>
-    <script src="./Cliente.js"></script>
+    <script src="customer.js"></script>
   </body>
 </html>

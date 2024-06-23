@@ -37,24 +37,15 @@
       </nav>
     </header>
     <main>
-      <section id="container" class="container row">
-        <form action="./index.html" class="form customer">
+      <section id="container" class="container">
+        <form id="salesForm" class="form customer">
           <h2 class="title customer">Cadastrar nova venda</h2>
-          <div class="input-container row">
-            <div class="input-container">
-              <label for="product">Nome do produto</label>
-              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
-              <input
-                placeholder="Digite o nome do produto"
-                name="product"
-                type="text"
-              />
-            </div>
-            <div class="input-container">
-              <label for="id_product">ID do produto</label>
-              <!-- o placeholder coloca um texto de exemplo do que ser digitado dentro do input -->
-              <input placeholder="12345678" name="id_product" type="number" />
-            </div>
+          <div class="input-container">
+            <label for="product">Produto</label>
+            <!-- O Select é um input diferente, é um input para selecionar alguma opcão dentre várias destacadas, as opções são declaradas dentro da tag <option />' -->
+            <select id="Produto" name="product">
+              <option value="">-- Selecione um produto --</option>
+            </select>
           </div>
           <div class="input-container">
             <label for="sale_date">Data da venda</label>
@@ -84,7 +75,21 @@
           </div>
           <button class="button" type="submit">Registrar venda</button>
         </form>
+        <div class="table">
+          <h2>Vendas Cadastradas</h2>
+          <table id="salesTable">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </section>
     </main>
+    <script src="./sales.js"></script>
   </body>
 </html>
